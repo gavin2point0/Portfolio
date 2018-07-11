@@ -1,0 +1,66 @@
+body {
+    font-family: heebo, sans-serif;
+}
+
+h1  {
+   font-weight: 900;
+   font-size: 56px;
+
+}
+a {
+    color: #fff;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.main-content {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 70%;
+
+}
+.contact-btn {
+    border: 1px solid;
+    border-radius: 25px;
+}
+.contact-btn:hover {
+    color: #fff;
+    background-color: #000;
+}
+.portfolio-wrapper{
+    max-width: none;
+}
+.portfolio-list {
+    list-style-type: none;
+    padding: 0;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+.portfolio-list-item {
+    background-color: #ddd;
+    padding: 30px;
+    margin: 5px;
+    display: block;
+    max-width: 100%;
+
+    -o-transition:.15s;
+    -ms-transition:.15s;
+    -moz-transition:.15s;
+    -webkit-transition:.15s;
+    transition:.15s;
+}
+.portfolio-list-item:hover {
+    background-color: #333;
+}
+@media only screen and (min-width: 845px) {
+    .portfolio-list-item {
+        margin: 5px;
+        text-align:center;
+        display: inline-block;
+        width: unset;
+    }
+}
