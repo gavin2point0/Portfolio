@@ -56,11 +56,15 @@ a:hover {
 .portfolio-list-item:hover {
     background-color: #333;
 }
-@media only screen and (min-width: 845px) {
+.portfolio-desc {
+    font-weight: 400;
+    font-size: 20px;
+}
+@media only screen and (min-width: 925px) {
     .portfolio-list-item {
         margin: 5px;
         text-align:center;
         display: inline-block;
-        width: unset;
+        width: 48%;
     }
 }
