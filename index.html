@@ -9,7 +9,6 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700,900" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
     <title>Gavin Peterson</title>
@@ -19,92 +18,122 @@
     <div class="container">
         <div class="row">
             <div class="col main-content">
-                <h1>Gavin Peterson</h1>
-                <a href="mailto:gavin.brent.peterson@gmail.com">
-                    <button class="btn contact-btn">Contact Me</button>
-                </a>
-                <hr>
-                <p>
-                    My beginning in web development was in 2014 when I was chosen for a high school internship at a web development agency. I
-                    took on a leadership position within the intern team and led two projects to develop custom e-commerce
-                    sites.
-                </p>
-                <p>
-                    After the internship ended I was hired part time as a QA technician where I worked with an international team of developers
-                    and project managers to ensure a high quality of work.
-                </p>
-                <p>
-                    In January of 2017 I was promoted to a Jr front-end developer and was hired full time soon after. I have worked on multiple
-                    Magento and Wordpress websites using HTML and CSS. I am currently in the University of Minnesota Coding
-                    Bootcamp Program which focuses on javascript and several frameworks and libraries including node.js,
-                    express.js, jQuery, react.js and sequelize as well as MySQL
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="container portfolio-wrapper">
-        <div class="row">
-            <div class="col">
-                <ul class="portfolio-list">
-                    <li class="portfolio-list-item">
-                        <a href="https://meetmagento.nyc/">
-                            Meet Magento NYC
-                            <hr>
-                            <p class="portfolio-desc">
-                                Wordpress site, custom php templates and js
-                            </p>
-                        </a>
-                    </li>
-                    <li class="portfolio-list-item">
-                        <a href="https://infinite-inlet-37488.herokuapp.com/">
-                            Writing Journal
-                            <hr>
-                            <p class="portfolio-desc">
-                                node app with express, MySQL, and handlebars
-                            </p>
-                        </a>
-                    </li>
-                    <li class="portfolio-list-item">
-                        <a href="https://baltu008.github.io/nutritionProject/">
-                            Dine or Dash
-                            <hr>
-                            <p class="portfolio-desc">
-                                jQuery app using ajax calls to an api
-                            </p>
-                        </a>
-                    </li>
-                    <li class="portfolio-list-item">
-                        <a href="https://gavin2point0.github.io/TriviaGame/">
-                            Trivia
-                            <hr>
-                            <p class="portfolio-desc">
-                                simple js app 
-                            </p>
-                        </a>
-                    </li>
-                    <li class="portfolio-list-item">
-                        <a href="https://gavin2point0.github.io/week-4-game/">
-                            Crystal Game
-                            <hr>
-                            <p class="portfolio-desc">
-                                simple js app 
-                            </p>
-                        </a>
-                    </li>
-                    <li class="portfolio-list-item">
-                        <a href="https://gavin2point0.github.io/Hangman-Game/">
-                            Hangman
-                            <hr>
-                            <p class="portfolio-desc">
-                                simple js app 
-                            </p>
-                        </a>
-                    </li>
-                </ul>
+                <img src="assets/images/image1.png"  class="me" alt="me">
+                <hr class="tab-break">
+                <h1 class="title">Gavin Peterson</h1>
+                <div class="tab">
+                    <button class="btn contact-btn tablinks" onclick="openTab(event, 'about')">About Me</button>
+                    <button class="btn contact-btn tablinks" onclick="openTab(event, 'contact')">Contact me</button>
+                    <button class="btn contact-btn tablinks" onclick="openTab(event, 'work')">My Work</button>
+                </div>
+
+                <div id="about" class="tabcontent">
+                    <hr class="tab-break">
+                    <p>
+                        My beginning in web development was in 2014 when I was chosen for a high school internship at a web development agency. I
+                        took on a leadership position within the intern team and led two projects to develop custom e-commerce
+                        sites.
+                    </p>
+                    <p>
+                        After the internship ended I was hired part time as a QA technician where I worked with an international team of developers
+                        and project managers to ensure a high quality of work.
+                    </p>
+                    <p>
+                        In January of 2017 I was promoted to a Jr front-end developer and was hired full time soon after. I have worked on multiple
+                        Magento and Wordpress websites using HTML and CSS. I am currently in the University of Minnesota
+                        Coding Bootcamp Program which focuses on javascript and several frameworks and libraries including
+                        node.js, express.js, jQuery, react.js and sequelize as well as MySQL
+                    </p>
+                </div>
+
+                <div id="contact" class="tabcontent">
+                    <hr class="tab-break">
+
+                    <p>
+                        <strong>Email: </strong>
+                        <a href="mailto:gavin.brent.peterson@gmail.com">gavin.brent.peterson@gmail.com</a>
+                    </p>
+                    <p>
+                        <strong>Phone: </strong>
+                        <a href="tel:1-952-297-5987">952-297-5987</a>
+                    </p>
+                    <p>
+                        <strong>GitHub: </strong>
+                        <a href="https://github.com/gavin2point0">https://github.com/gavin2point0</a>
+                    </p>
+                </div>
+
+                <div id="work" class="tabcontent">
+                    <hr class="tab-break">
+
+                    <div class="container portfolio-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="portfolio-list">
+                                    <li class="portfolio-list-item">
+                                        <a href="https://meetmagento.nyc/">
+                                            Meet Magento NYC
+                                            <hr>
+                                            <p class="portfolio-desc">
+                                                Wordpress site, custom php templates and js
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="portfolio-list-item">
+                                        <a href="https://infinite-inlet-37488.herokuapp.com/">
+                                            Writing Journal
+                                            <hr>
+                                            <p class="portfolio-desc">
+                                                node app with express, MySQL, and handlebars
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="portfolio-list-item">
+                                        <a href="https://baltu008.github.io/nutritionProject/">
+                                            Dine or Dash
+                                            <hr>
+                                            <p class="portfolio-desc">
+                                                jQuery app using ajax calls to an api
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="portfolio-list-item">
+                                        <a href="https://gavin2point0.github.io/TriviaGame/">
+                                            Trivia
+                                            <hr>
+                                            <p class="portfolio-desc">
+                                                simple js app
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="portfolio-list-item">
+                                        <a href="https://gavin2point0.github.io/week-4-game/">
+                                            Crystal Game
+                                            <hr>
+                                            <p class="portfolio-desc">
+                                                simple js app
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="portfolio-list-item">
+                                        <a href="https://gavin2point0.github.io/Hangman-Game/">
+                                            Hangman
+                                            <hr>
+                                            <p class="portfolio-desc">
+                                                simple js app
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <script src='assets/js/app.js'></script>
 </body>
 
 </html>

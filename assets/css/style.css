@@ -1,5 +1,7 @@
 body {
     font-family: heebo, sans-serif;
+    background-color: #78B0FF;
+    color: #DDE6FF;
 }
 
 h1  {
@@ -8,27 +10,67 @@ h1  {
 
 }
 a {
-    color: #fff;
+    color: #DDE6FF;
 }
 a:hover {
-    color: #fff;
     text-decoration: none;
 }
+.me {
+    border: 3px solid #DDE6FF;
+    border-radius: 75px;
+    width: 150px;
+    height: auto;
+}
+.main-content{
+    text-align:center;
+    margin-top: 50px;
+}
 
+.tab {
+    overflow: hidden;
+}
 
-.main-content {
-    text-align: center;
-    margin: 50px auto;
-    max-width: 70%;
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border-radius: 30px;
+    color: #DDE6FF;
+}
+
+.tab button:hover {
+    color: #78B0FF;
+    background-color: #4960CC;
+}
+
+.tab button.active {
+    background-color: #DDE6FF;
+    color: #78B0FF;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
 
 }
-.contact-btn {
+#about{
+    max-width: 600px;
+    margin: 0 auto;
+}
+#contact{
+    text-align: left;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.tab-break {
+    color: #B20600;
     border: 1px solid;
-    border-radius: 25px;
-}
-.contact-btn:hover {
-    color: #fff;
-    background-color: #000;
+    margin: 20px auto;
+    max-width: 500px;
+
 }
 .portfolio-wrapper{
     max-width: none;
@@ -41,11 +83,12 @@ a:hover {
     text-align: center;
 }
 .portfolio-list-item {
-    background-color: #ddd;
+    background-color: #DDE6FF;
     padding: 30px;
     margin: 5px;
     display: block;
     max-width: 100%;
+    border-radius: 10px;
 
     -o-transition:.15s;
     -ms-transition:.15s;
@@ -54,8 +97,13 @@ a:hover {
     transition:.15s;
 }
 .portfolio-list-item:hover {
-    background-color: #333;
+    background-color: #4960CC;
 }
+.portfolio-list-item a{
+    color: #78B0FF;
+}
+
+
 .portfolio-desc {
     font-weight: 400;
     font-size: 20px;
